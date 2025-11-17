@@ -1,0 +1,17 @@
+/******************************************************************************\
+*                                                                              *
+*	Copyright © 2009-2010 Theo Brinkman and Andrew Dabrowski. All rights reserved.                       *
+*                                                                              *
+*	This work is licensed under a Creative Commons                             *
+*	Attribution-Noncommercial-No Derivative Works 3.0 United States License.   *
+*                                                                              *
+\******************************************************************************/
+
+The full text of this license (CC-BY-NC-ND 3.0 US) may be found at:
+	http://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode
+A human-readable summary can be found at:
+	http://creativecommons.org/licenses/by-nc-nd/3.0/us/
+
+If you wish to use make use of this work under any other circumstances than
+those permitted by this license, you may contact me to negotiate a different
+license.  To do so, email me at: 'theo.brinkman@gmail.com'.
