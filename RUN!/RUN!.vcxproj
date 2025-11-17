@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0958B76A-9ED7-433F-86FA-4B3BA22FE7E7}</ProjectGuid>
+    <RootNamespace>RUN</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SDL-1.2.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SDL-1.2.14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr9.lib;dxguid.lib;dinput8.lib;dsound.lib;winmm.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_ttf.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr9.lib;dxguid.lib;dinput8.lib;dsound.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cAnimatedSprite.cpp" />
+    <ClCompile Include="cAudioManager.cpp" />
+    <ClCompile Include="cAvatar.cpp" />
+    <ClCompile Include="cCanvasSDL.cpp" />
+    <ClCompile Include="cColor.cpp" />
+    <ClCompile Include="cCredits.cpp" />
+    <ClCompile Include="cDoor.cpp" />
+    <ClCompile Include="cFileManager.cpp" />
+    <ClCompile Include="cFontSheet.cpp" />
+    <ClCompile Include="cGame.cpp" />
+    <ClCompile Include="cGraphicsManager.cpp" />
+    <ClCompile Include="cGraphicsManagerSDL.cpp" />
+    <ClCompile Include="cImage.cpp" />
+    <ClCompile Include="cInputManager.cpp" />
+    <ClCompile Include="cInputManagerRaw.cpp" />
+    <ClCompile Include="cInputManagerSDL.cpp" />
+    <ClCompile Include="cLargeBox.cpp" />
+    <ClCompile Include="cLevelMap.cpp" />
+    <ClCompile Include="cMediumBox.cpp" />
+    <ClCompile Include="cMenu.cpp" />
+    <ClCompile Include="cNagScreen.cpp" />
+    <ClCompile Include="cRect.cpp" />
+    <ClCompile Include="cScoreScreen.cpp" />
+    <ClCompile Include="cScrollingText.cpp" />
+    <ClCompile Include="cSecret.cpp" />
+    <ClCompile Include="cSmallBox.cpp" />
+    <ClCompile Include="cSprite.cpp" />
+    <ClCompile Include="cTileSet.cpp" />
+    <ClCompile Include="cTimer.cpp" />
+    <ClCompile Include="cWindowManager.cpp" />
+    <ClCompile Include="cWindowManagerDX.cpp" />
+    <ClCompile Include="cWindowMangerSDL.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="cAudioManagerDX.cpp" />
+    <ClCompile Include="cCanvasDX.cpp" />
+    <ClCompile Include="cGraphicsManagerDX.cpp" />
+    <ClCompile Include="cInputManagerDX.cpp" />
+    <ClCompile Include="dsutil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cAnimatedSprite.h" />
+    <ClInclude Include="cAudioManager.h" />
+    <ClInclude Include="cAvatar.h" />
+    <ClInclude Include="cCanvasSDL.h" />
+    <ClInclude Include="cColor.h" />
+    <ClInclude Include="cCredits.h" />
+    <ClInclude Include="cDoor.h" />
+    <ClInclude Include="cFileManager.h" />
+    <ClInclude Include="cFontSheet.h" />
+    <ClInclude Include="cGame.h" />
+    <ClInclude Include="cGraphicsManager.h" />
+    <ClInclude Include="cGraphicsManagerSDL.h" />
+    <ClInclude Include="cImage.h" />
+    <ClInclude Include="cInputManager.h" />
+    <ClInclude Include="cInputManagerRaw.h" />
+    <ClInclude Include="cInputManagerSDL.h" />
+    <ClInclude Include="cLargeBox.h" />
+    <ClInclude Include="cLevelMap.h" />
+    <ClInclude Include="cMediumBox.h" />
+    <ClInclude Include="cMenu.h" />
+    <ClInclude Include="cNagScreen.h" />
+    <ClInclude Include="cRect.h" />
+    <ClInclude Include="cScoreScreen.h" />
+    <ClInclude Include="cScrollingText.h" />
+    <ClInclude Include="cSecret.h" />
+    <ClInclude Include="cSmallBox.h" />
+    <ClInclude Include="cSprite.h" />
+    <ClInclude Include="cTileSet.h" />
+    <ClInclude Include="cTimer.h" />
+    <ClInclude Include="cWindowManager.h" />
+    <ClInclude Include="cWindowManagerDX.h" />
+    <ClInclude Include="cWindowManagerSDL.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="IWindowManager.h" />
+    <ClInclude Include="STRUCTURES.h" />
+    <ClInclude Include="cAudioManagerDX.h" />
+    <ClInclude Include="cCanvasDX.h" />
+    <ClInclude Include="cGraphicsManagerDX.h" />
+    <ClInclude Include="cInputManagerDX.h" />
+    <ClInclude Include="dsutil.h" />
+    <ClInclude Include="dxutil.h" />
+    <ClInclude Include="IAudioManager.h" />
+    <ClInclude Include="ICanvas.h" />
+    <ClInclude Include="IGraphicsManager.h" />
+    <ClInclude Include="IInputManager.h" />
+    <ClInclude Include="IObject.h" />
+    <ClInclude Include="TYPEDEFS.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BasicTileSet.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Box.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Crawling.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Credits.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Darkness.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Doors.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\font.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\LargeBox.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Lever.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\MediumBox.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Running.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Secret.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\SmallBox.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Standing.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Switch.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Title Screen.png">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Images\Walking.PNG">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Levels\Test.lvl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="COPYING.TXT" />
+    <None Include="Credits.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
